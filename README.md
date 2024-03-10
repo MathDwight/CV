@@ -3,7 +3,7 @@
 These are the LaTeX sources for my academic CV. (Much thanks to GitHub user leouieda <-- Leonardo Uieda!)
 
 **Download** the latest compiled PDF:
-[DAWilliamsII_CV.pdf](https://github.com/mathdwight/cv/raw/pdf/DAWilliamsII_CV.pdf)
+[DAWilliamsII_CV.pdf](https://github.com/mathdwight/cv/raw/pdf/DwightCVSummary.pdf)
 
 ## Template
 
