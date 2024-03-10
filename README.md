@@ -1,6 +1,6 @@
 # Curriculum Vitae
 
-These are the LaTeX sources for my academic CV. (Much thanks to GitHub user leouieda!)
+These are the LaTeX sources for my academic CV. (Much thanks to GitHub user leouieda <-- Leonardo Uieda!)
 
 **Download** the latest compiled PDF:
 [DAWilliamsII_CV.pdf](https://github.com/mathdwight/cv/raw/pdf/DAWilliamsII_CV.pdf)
@@ -21,7 +21,7 @@ To use it:
 * Push your changes and GitHub Actions should do it's magic and make the PDF
   available at `https://github.com/YOURUSERNAME/cv/raw/pdf/cv.pdf` (Dwight: Need to modify .tex file if using modified template: `https://github.com/YOURUSERNAME/cv/raw/pdf/YOURNAMEcv.pdf`).
 
-### More from leouieda below
+### More from Leonardo Uieda below
 
 ## About 
 
