@@ -1,6 +1,8 @@
 # Curriculum Vitae Summary (2-pager)
 
-These are the LaTeX sources for my academic CV summary i.e. a 2-pager. (Much thanks to Leonardo Uieda --> GitHub user leouieda <-- )
+These are the LaTeX sources for my academic CV summary i.e. a 2-pager. 
+
+(Much thanks to Leonardo Uieda --> GitHub user leouieda <-- )
 
 **Download** the latest compiled PDF:
 [DwightCV2pager.pdf](https://github.com/mathdwight/cv/raw/pdf/DwightCV2pager.pdf)
