@@ -1,9 +1,12 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Leonardo Uieda %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % A clean template for an academic CV. This is a short summary version.
 %
 % Uses tabularx to create two column entries (date and job/edu/citation).
 % Defines commands to make adding entries simpler.
 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Adopted and slightly modified by Dwight in Spring 2024. 
+% Thank you, again, Leonardo Uieda!
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[10pt,a4paper]{article}
@@ -15,42 +18,77 @@
 \newcommand{\UTA}{The University of Texas at Arlington}
 \newcommand{\ISU}{Iowa State University}
 \newcommand{\Pomona}{Pomona College}
-%\newcommand{\LIV}{University of Liverpool}
-%\newcommand{\USP}{Universidade de São Paulo}
+\newcommand{\MSRI}{Mathematical Sciences Research Institute}
+\newcommand{\CAD}{Charles A. Dana Center}
+\newcommand{\CADUT}{Charles A. Dana Center at The University of Texas at Austin}
+
 
 % Identifying information
 \newcommand{\Title}{Curriculum Vit\ae\ Summary}
+\newcommand{\FullCV}{\href{https://mathdwight.com/files/DAWilliamsII_CV.pdf}{Extended Curriculum Vit\ae}}
 \newcommand{\FirstName}{Dwight}
 \newcommand{\MiddleName}{Anderson}
 \newcommand{\LastName}{Williams II}
 \newcommand{\Initials}{DA}
 \newcommand{\AcaSuffix}{PhD}
-\newcommand{\MyName}{\FirstName\ \MiddleName\ \LastName\ \AcaSuffix}
+\newcommand{\MyName}{\FirstName\ \MiddleName\ \LastName,\ \AcaSuffix}
 \newcommand{\Me}{\underline{\LastName, \Initials}}  % For citations
 \newcommand{\Email}{Dwight.WilliamsII@morgan.edu}
 \newcommand{\PersonalWebsite}{www.mathdwight.com}
-%\newcommand{\LabWebsite}{www.compgeolab.org}
+\newcommand{\arXivWebsite}{arxiv.org/a/williams\_d\_5.html}
 \newcommand{\ORCID}{0000-0003-2611-2388}
 \newcommand{\GitHubProfile}{MathDwight}
 
 % Names for citing coauthors
-\newcommand{\DG}{Grantcharov, D}
-\newcommand{\JTH}{Hartwig, JT}
+\newcommand{\Dimitar}{Grantcharov, D}
+\newcommand{\Jonas}{Hartwig, JT}
 \newcommand{\PEH}{Harris, PE}
+\newcommand{\Rebecca}{Garcia, RE}
+%\newcommand{\David}{Kang, D}
 \newcommand{\Yasmin}{Aguillon, Y}
-\newcommand{\YasminUG}{\textbf{Aguillon, Y}}
+%\newcommand{\UGCollab{\Yasmin}}{\textbf{Aguillon, Y}}
 \newcommand{\Dylan}{Alvarenga, D}
-\newcommand{\DylanUG}{\textbf{Alvarenga, D}}
+%\newcommand{\DylanUG}{\textbf{Alvarenga, D}}
 \newcommand{\Surya}{Kotapati, S}
-\newcommand{\SuryaUG}{\textbf{Kotapati, S}}
-\newcommand{\Carlos}{Mart\'{i}nez Mori, JC}
-\newcommand{\CarlosG}{\textit{Mart\'{i}nez Mori, JC}}
+%\newcommand{\UGCollab{\Surya}}{\textbf{Kotapati, S}}
+\newcommand{\Carlos}{Mart\'{i}nez~Mori, JC}
+%\newcommand{\GradCollab{\Carlos}}{\textit{Mart\'{i}nez Mori, JC}}
 \newcommand{\Cas}{Monroe, CD}
-\newcommand{\CasG}{\textit{Monroe, CD}}
+%\newcommand{\GradCollab{\Cas}}{\textit{Monroe, CD}}
 \newcommand{\Zia}{Saylor, Z}
-\newcommand{\ZiaUG}{\textbf{Saylor, Z}}
+%\newcommand{\UGCollab{\Zia}}{\textbf{Saylor, Z}}
 \newcommand{\Camelle}{Tieu, C}
-\newcommand{\CamelleUG}{\textbf{Tieu, C}}
+%\newcommand{\UGCollab{\Camelle}}{\textbf{Tieu, C}}
+
+\newcommand{\Michael}{Young, M}
+\newcommand{\Sarah}{Sword, S}
+\newcommand{\Aris}{Winger, A}
+\newcommand{\Christian}{McRoberts, C}
+\newcommand{\Maya}{Bartel, M}
+\newcommand{\Simone}{Sisneros-Thiry, S}
+\newcommand{\Miriam}{Gates, M}
+\newcommand{\Carl}{Westine, C}
+
+\newcommand{\Imhotep}{Hogan, IB}
+\newcommand{\Tomas}{Aguilar-Fraga, T}
+\newcommand{\Daniel}{Alofamoni~Quiñonez, D} 
+\newcommand{\Aalliyah}{Celestine, A} 
+\newcommand{\Parneet}{Gill, P} 
+\newcommand{\Jakeyl}{Johnson, J} 
+\newcommand{\Kobe}{Lawson-Chavanu, K} 
+\newcommand{\Lina}{Liu, L}
+\newcommand{\Aaron}{Ortiz, A} 
+\newcommand{\Lauren}{Quesada, L} 
+\newcommand{\Cynthia}{Rivera~Sánchez, CM} 
+\newcommand{\Christopher}{Soto, C}
+\newcommand{\Dirk}{Tolson III, D}
+\newcommand{\Jacob}{van~der~Leeuw, J}
+\newcommand{\Pamela}{Vargas, P}
+
+% To emphasize student status: undergraduate, gradaute (added by Dwight)
+\newcommand{\UGCollab}[1]{\textbf{#1}}
+\newcommand{\GradCollab}[1]{\textit{#1}}
+
 
 % Load packages
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -100,7 +138,7 @@
 \usepackage{titlesec}
 
 
-% Dwight added mathy packages
+% mathy packages (added by Dwight)
 \usepackage{amssymb, amsthm, amsmath, mathtools}
 
 % Fancy header configuration
@@ -127,6 +165,29 @@
 \definecolor{lightgray}{gray}{0.9}
 \definecolor{mediumblue}{HTML}{2060c2}
 \definecolor{lightblue}{HTML}{a0c3ff}
+%%% Additinoal colors (added by Dwight)
+\definecolor{darkorange}{rgb}{1.0, 0.55, 0.0}
+\definecolor{darkorangex}{rgb}{0.89, 0.49, 0.0}
+\definecolor{cardinal}{rgb}{0.77, 0.12, 0.23}
+\definecolor{caribbeangreen}{rgb}{0.0, 0.8, 0.6}
+\definecolor{asparx}{rgb}{0.53, 0.76, 0.42}
+\definecolor{ocre}{RGB}{0,96,128}
+\definecolor{orng}{RGB}{224,112,0}
+\definecolor{dred}{RGB}{164,28,0}
+\definecolor{bluegray}{rgb}{0.4, 0.6, 0.8}
+\definecolor{ceil}{rgb}{0.57, 0.63, 0.81}
+\definecolor{ceilz}{rgb}{0.27, 0.33, 0.41}
+\definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
+\definecolor{darkslateblue}{rgb}{0.28, 0.24, 0.55}
+\definecolor{glaucous}{rgb}{0.38, 0.51, 0.71}
+\definecolor{periwinkle}{rgb}{0.8, 0.8, 1.0}
+\definecolor{richlilac}{rgb}{0.71, 0.4, 0.82}
+\definecolor{coolgrey}{rgb}{0.55, 0.57, 0.67}
+\definecolor{timberwolf}{rgb}{0.86, 0.84, 0.82}
+\definecolor{wheat}{rgb}{0.96, 0.87, 0.7}
+\definecolor{sunset}{rgb}{0.98, 0.84, 0.65}
+\definecolor{seashell}{rgb}{1.0, 0.96, 0.93}
+\definecolor{goldenyellow}{rgb}{1.0, 0.87, 0.0}
 
 % No indentation
 \setlength\parindent{0cm}
@@ -175,11 +236,11 @@
 \end{tabularx}
 \TablePad
 }
-
+	
 % Macros to set the year and duration on the left column
 \newcommand{\Duration}[2]{\fontsize{10pt}{0}\selectfont \texttt{#1-#2}}
 \newcommand{\Year}[1]{\fontsize{10pt}{0}\selectfont \texttt{#1}}
-\newcommand{\Ongoing}{on}
+\newcommand{\Ongoing}{curr}
 \newcommand{\Future}{future}
 
 % Macros to add links and mark publications
@@ -201,6 +262,8 @@
   \MyName{}
   \Separator{}
   \Title{}
+  %\Separator{}
+  %\FullCV
 }
 \rfoot{%
   \FooterFont{}
@@ -215,7 +278,7 @@
 % Metadata for the PDF output and control of hyperlinks
 \hypersetup{
   colorlinks,
-  allcolors=mediumblue,
+  allcolors=darkorangex,
   breaklinks=true,
   pdftitle={\Title{} - \MyName},
   pdfauthor={\MyName},
@@ -229,15 +292,15 @@
 \end{minipage}
 \begin{minipage}[t]{0.5\textwidth}
   \begin{flushright}
-    \Title{}
+    \Title{}\\\FullCV
   \end{flushright}
 \end{minipage}
-\\[-0.1cm]
+\\[0.1cm]
 \textcolor{lightgray}{\rule{\textwidth}{3pt}}
 \begin{minipage}[t]{0.5\textwidth}
   ORCID: \href{https://orcid.org/\ORCID}{\ORCID}
-  %\\
-  %Research Group: \Website{\LabWebsite}
+  \\
+  arXiv: \Website{\arXivWebsite}
   \\
   Website: \Website{\PersonalWebsite}
   \\
@@ -245,54 +308,40 @@
 \end{minipage}
 \begin{minipage}[t]{0.5\textwidth}
   \begin{flushright}
-  Departamento of Mathematics
-  %\\
-  %Instituto de Astronomia, Geofísica e Ciências Atmosféricas
+  Department of Mathematics
   \\
   Morgan State University
   \\
-  1700 E Cold Spring Lane, Baltimore, MD 21251
+  1700 E Cold Spring Lane,\\ Baltimore, MD 21251
   \end{flushright}
 \end{minipage}
 \vspace{0.3cm}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Professional Appointments}
 
 \begin{EntriesTableDuration}
   \Duration{2023}{\Ongoing}  &
-  \textbf{Assistant Professor}, \MSU, USA
+  \textbf{Assistant Professor}, \MSU. 
   \\
   \Duration{2022}{2023}  &
-  \textbf{Visiting Assitant Professor}, \Pomona, USA
-  %\\
-  %\Duration{2017}{2019}  &
-  %\textbf{Visiting Researcher}, \UHM, USA
-  %\\
-  %\Duration{2014}{2018}  &
-  %\textbf{Professor Assistente}, \UERJ, Brazil
+  \textbf{Visiting Assitant Professor}, \Pomona.
+  \\
+  \Duration{2022}{2022}  &
+  \textbf{Facilitator}, \CAD\ (Math Leaders 4 Racial Justice). Supervisor: David Kang.
+  \\
+  \Duration{2020}{2021}  &
+  \textbf{Postdoc Research Associate}, \ISU. Supervisor: Michael Young.
+  \\
+  \Duration{2021}{2021}  &
+  \textbf{Postdoctoral Research Advisor}, \MSRI\ (MSRI-UP). Supervisors: Rebecca E. Garcia \& Pamela E. Harris.
 \end{EntriesTableDuration}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Community Service}
-
-% \begin{EntriesTableDuration}
-%   \Duration{2022}{\Ongoing} & \textbf{Board Member}, Software Underground, \Website{softwareunderground.org}
-%   \\
-%   \Duration{2022}{\Ongoing} & \textbf{Advisory Committee Member}, pyOpenSci, \Website{www.pyopensci.org}
-%   \\
-%   \Duration{2019}{2022} & \textbf{Topic Editor}, Journal of Open Source Software, \Website{joss.theoj.org}
-%   \\
-%   \Duration{2019}{2022} & \textbf{Advisory Council Member}, EarthArXiv, \Website{eartharxiv.org}
-% \end{EntriesTableDuration}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Education}
 
 \begin{EntriesTableDuration}
   \Duration{2016}{2020}  &
   \textbf{PhD in Mathematics}, \UTA.
-  Advisor: \DG
+  Advisor: Dimitar Grantcharov.
   %\DOI{10.6084/m9.figshare.16883689}
   \\
   \Duration{2012}{2014}  &
@@ -303,136 +352,11 @@
   \textbf{BS in Mathematics}, \FAMU.
   %\DOI{10.6084/m9.figshare.963547}
 \end{EntriesTableDuration}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Open Research Software}
-
-% \begin{EntriesTableDuration}
-%   \Duration{2010}{\Ongoing} &
-%   \textbf{Fatiando a Terra} | \Website{www.fatiando.org}
-%   \newline
-%   \textit{Python tools for geophysical data processing, forward modeling, and inversion}
-%   \newline
-%   Role: Project founder, core developer, Steering Council Member
-%   \\
-%   \Duration{2017}{\Ongoing} &
-%   \textbf{PyGMT} | \Website{www.pygmt.org}
-%   \newline
-%   \textit{A Python interface for the Generic Mapping Tools}
-%   \newline
-%   Role: Project founder, developer, advisor
-%   \\
-%   \Duration{2017}{\Ongoing} &
-%   \textbf{The Generic Mapping Tools (GMT)} | \Website{www.generic-mapping-tools.org}
-%   \newline
-%   \textit{A data processing and mapping toolbox for the Earth, Ocean, and Planetary Science}
-%   \newline
-%   Role: Community stewardship advisor, set up the website + forum + GitHub workflow
-%   \\
-%   \Duration{2022}{\Ongoing} &
-%   \textbf{xlandsat} | \Website{compgeolab.org/xlandsat}
-%   \newline
-%   \textit{Load Landsat remote sensing scenes in Python and xarray}
-%   \newline
-%   Role: Creator and sole developer
-%   \\
-%   \Duration{2009}{2016} &
-%   \textbf{Tesseroids} | \Website{tesseroids.leouieda.com}
-%   \newline
-%   \textit{Forward modeling of gravitational fields in spherical coordinates}
-%   \newline
-%   Role: Creator and sole developer
-% \end{EntriesTableDuration}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Open Educational Resources}
-
-% \begin{EntriesTableYear}
-%   \Year{2022} &
-%   \textbf{A Quick Introduction to Machine Learning}.
-%   \GitHub{leouieda/ml-intro}.
-%   \\
-%   \Year{2023} &
-%   \textbf{Remote Sensing with Python}.
-%   \GitHub{leouieda/remote-sensing}.
-%   \\
-%   \Year{2023} &
-%   \textbf{Lithosphere Dynamics with Python}.
-%   \GitHub{leouieda/lithosphere}.
-%   \\
-%   \Year{2022} &
-%   \textbf{Terrestrial Gravimetry with Python}.
-%   \GitHub{leouieda/gravity-processing}.
-% \end{EntriesTableYear}
-
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Grants and Fellowships}
-
-% \begin{EntriesTableDuration}
-%   \Duration{2022}{2024}  &
-%   \textbf{Towards individual-grain paleomagnetism: Translating regional-scale geophysics to the nascent field of magnetic microscopy}.
-%   \newline
-%   Royal Society.
-%   \Me{} (PI); \Ricardo{}.
-%   Award: \href{https://www.compgeolab.org/news/rsoc-mag-microscopy-2022.html}{IES\textbackslash{}R3\textbackslash{}213141}
-%   \\
-%   \Year{2020}  &
-%   \textbf{SSI Fellowship Programme}.
-%   \newline
-%   Software Sustainability Institute.
-%   \Me{} (PI).
-%   Award: \Website{software.ac.uk/about/fellows}
-%   \\
-%   \Duration{2020}{2024}  &
-%   \textbf{A Sustainable Plan for the Future of the Generic Mapping Tools}.
-%   \newline
-%   NSF-EAR.
-%   \Paul{} (PI); \Me{}.
-%   Award: \href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1948602}{1948602}.
-%   \\
-%   \Duration{2018}{2024}  &
-%   \textbf{The EarthScope/GMT Analysis and Visualization Toolbox}.
-%   \newline
-%   NSF-EAR.
-%   \Paul{} (PI); \Me{}; \Bridget{}.
-%   Award: \href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1829371}{1829371}.
-% \end{EntriesTableDuration}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Selected Invited Presentations}
-
-% \begin{EntriesTableYear}
-% \Year{2021}  &
-%   \textbf{Design useful tools that do one thing well and work together: rediscovering the UNIX philosophy while building the Fatiando a Terra project}.
-%   \newline
-%   AGU 2021.
-%   \Me; \LLi; \Santiago; \Agustina.
-%   \GitHub{fatiando/agu2021}.
-%   \\
-%   &
-%   \textbf{Open-science for gravimetry: tools, challenges, and opportunities}.
-%   \newline
-%   GFZ Helmholtz Centre Potsdam.
-%   \Me; \Santiago; \Agustina.
-%   \GitHub{leouieda/2021-06-22-gfz}.
-%   \\
-% \Year{2021}  &
-%   \textbf{Fatiando a Terra: Open-source tools for geophysics}.
-%   \newline
-%   Geophysical Society of Houston.
-%   \Me; \Santiago; \Agustina.
-%   \GitHub{fatiando/2021-gsh}.
-%   \\
-% \Year{2020}  &
-%   \textbf{Geophysical research powered by open-source}.
-%   \newline
-%   Christian Albrechts Universität zu Kiel.
-%   \Me.
-%   \GitHub{leouieda/2020-07-01-kiel}.
-% \end{EntriesTableYear}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Publication Highlights}
+\section{Research Highlights \hfill\small{\textbf{undergraduate}/\textit{graduate} student}}
+\vspace{0.1in}
+    
+    \subsection{In Mathematics}
 
 \begin{EntriesTableYear}
 \Year{2023}  &
@@ -441,7 +365,7 @@
   American Mathematical Monthly.
   \DOI{10.1080/00029890.2023.2206311}.
   \newline
-  \YasminUG; \DylanUG; \PEH; \SuryaUG; \CarlosG; \CasG; \ZiaUG; \CamelleUG; \Me.
+  \UGCollab{\Yasmin}; \UGCollab{\Dylan}; \PEH; \UGCollab{\Surya}; \GradCollab{\Carlos}; \GradCollab{\Cas}; \UGCollab{\Zia}; \UGCollab{\Camelle}; \Me.
   %\GitHub{compgeolab/micromag-euler-dipole}.
   \\
 \Year{2023}  &
@@ -450,72 +374,96 @@
   Journal of Geometry and Physics.
   \DOI{10.1016/j.geomphys.2023.104788}.
   \newline
-  \JTH; \Me; %\Ricardo; \Janine; \Roger.
+  \Jonas; \Me. %\Ricardo; \Janine; \Roger.
   %\GitHub{compgeolab/micromag-euler-dipole}.
   \\
 \Year{2022}  &
   \textbf{Diagonal reduction algebra for $\mathfrak{osp}(1|2)$}.
   \newline
   Theoretical and Mathematical Physics.
-  \DOI{10.1134/S0040577922020015}.
+  \DOI{10.1134/S0040577922020015} (English) \DOI{10.4213/tmf10138} (Russian)
   \newline
-  \JTH; \Me; %\Ricardo; \Janine; \Roger.
+  \Jonas; \Me. %\Ricardo; \Janine; \Roger.
+  %\GitHub{compgeolab/micromag-euler-dipole}.
+ \end{EntriesTableYear}
+  
+    \subsection{In Education}
+
+\begin{EntriesTableYear}
+\Year{2021}  &
+  \textbf{Informing Change: Stories of Graduate Students from Underrepresented Groups in Mathematics Doctoral Programs}.
+  \newline
+  Association for the Study of Higher Education 46\textsuperscript{th} General Conference. \href{https://www.ashe.ws//Files/Past Conferences/ASHE 2021 Program Book.pdf}{Program book}
+  %\DOI{10.1080/00029890.2023.2206311}.
+  \newline
+  \Carl; \Sarah; \Michael; \GradCollab{\Maya}; \Me; \PEH.
   %\GitHub{compgeolab/micromag-euler-dipole}.
   \\
-% \Year{2019}  &
-%   \textbf{The Generic Mapping Tools, Version 6}.
-%   \newline
-%   Geochemistry, Geophysics, Geosystems.
-%   \DOI{10.1029/2019GC008515}.
-%   \newline
-%   \Paul; \Joaquim; \Me; \Remko; \Florian; \Walter; \Dongdong.
-%   \\
-% \Year{2019}  &
-%   \textbf{Gravitational field calculation in spherical coordinates using variable densities in depth}.
-%   \newline
-%   Geophysical Journal International.
-%   \DOI{10.1093/gji/ggz277}.
-%   \Preprint{10.31223/osf.io/3548g}.
-%   \newline
-%   \Santiago; \Agustina; \Gimenez; \Me.
-%   \GitHub{pinga-lab/tesseroid-variable-density}.
-%   \\
-% \Year{2019}  &
-%   \textbf{Efficient 3D large-scale forward-modeling and inversion of gravitational fields in spherical coordinates with application to lunar mascons}.
-%   \newline
-%   Journal of Geophysical Research: Solid Earth.
-%   \DOI{10.1029/2019JB017691}.
-%   \Preprint{10.31223/osf.io/dzf9j}.
-%   \newline
-%   \Guangdong; \Bo; \Me; \JLiu; \MKaban; \LChen; \RGuo.
-%   \\
-% \Year{2018}  &
-%   \textbf{Verde: Processing and gridding spatial data using Green's functions}.
-%   \newline
-%   Journal of Open Source Software.
-%   \DOI{10.21105/joss.00957}.
-%   \newline
-%   \Me.
-%   \GitHub{fatiando/verde}.
-%   \\
-% \Year{2017}  &
-%   \textbf{Fast non-linear gravity inversion in spherical coordinates with application to the South American Moho}.
-%   \newline
-%   Geophysical Journal International.
-%   \DOI{10.1093/gji/ggw390}.
-%   \Preprint{10.31223/osf.io/9ba4m}.
-%   \newline
-%   \Me; \Val.
-%   \GitHub{pinga-lab/paper-moho-inversion-tesseroids}.
-%   \\
-% \Year{2016}  &
-%   \textbf{Tesseroids: forward modeling gravitational fields in spherical coordinates}.
-%   \newline
-%   Geophysics.
-%   \DOI{10.1190/geo2015-0204.1}.
-%   \newline
-%   \Me; \Val; \Carla.
-%   \GitHub{pinga-lab/paper-tesseroids}.
+\Year{2021}  &
+  \textbf{Studying Successful Doctoral Students in Mathematics from Underrepresented Groups}.
+  \newline
+  Accelerating Systemic Change Network (ASCN) \& Network of STEM Education Centers (NSEC) Transforming Institutions Conference 2021. \href{https://ascnhighered.org/ASCN/transforming_institutions/2021/program/posters/session_c/2/243631.html}{Poster webpage}
+  %\DOI{10.1080/00029890.2023.2206311}.
+  \newline
+  \Sarah; \Michael; \Carl; \Aris; \GradCollab{\Maya}; \Me; \GradCollab{\Christian}; \Simone; \Miriam; \PEH.
+  %\GitHub{compgeolab/micromag-euler-dipole}.
  \end{EntriesTableYear}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Exposition}
+
+\begin{EntriesTableYear}
+\Year{2022}  &
+  \textbf{People Over Math: A Co-created Principle for Successful Research Communities}.
+  \newline
+  MAA FOCUS.
+  \href{http://digitaleditions.walsworthprintgroup.com/publication/?m=7656\&i=749450\&p=26\&fbclid=IwAR19q6M4ZQ1I8uncyU-iuGHsHfz-6JHFiZFHrg9thmyGqXAESJYRlaHXijc\&ver=html5}{Digital edition}
+  \newline
+  \Rebecca; \PEH; \Me; \GradCollab{\Carlos}; \GradCollab{\Cas}; \UGCollab{\Tomas}; \UGCollab{\Yasmin}; \UGCollab{\Daniel}; \UGCollab{\Dylan}; \UGCollab{\Aalliyah}; \UGCollab{\Parneet}; \UGCollab{\Imhotep}; \UGCollab{\Jakeyl}; \UGCollab{\Kobe}; \UGCollab{\Lina}; \UGCollab{\Aaron}; \UGCollab{\Lauren}; \UGCollab{\Cynthia}; \UGCollab{\Christopher}; \UGCollab{\Camelle}; \UGCollab{\Dirk}; \UGCollab{\Jacob}; \UGCollab{\Pamela}.
+  %\GitHub{compgeolab/micromag-euler-dipole}.
+ \end{EntriesTableYear}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Instructor of Record}
+\vspace{0.1in}
+
+    \subsection{\MSU}
+\href{https://catalog.morgan.edu/preview_program.php?catoid=25\&poid=5681\&hl}{Graduate}: MATH 505 Abstract Algebra I, MATH 506 Abstract Algebra II.\\
+\href{https://catalog.morgan.edu/preview_program.php?catoid=24\&poid=5514\&hl}{Undergraduate}: MATH 413 Algebraic Structures, MATH 431 Mathematical Theory of Statistics, MATH 432 Mathematical Theory of Statistics II.
+
+    \subsection{\Pomona}
+\href{https://catalog.pomona.edu/content.php?filter%5B27%5D=MATH&filter%5B29%5D=&filter%5Bcourse_type%5D=-1&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=43&expand=&navoid=8669&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter}{Undergraduate}: MATH PO 032 Calculs III, MATH 101 PO Introduction to Analysis, MATH 171 PO Abstract Algebra I: Groups \& Rings
+
+    \subsection{\UTA}
+\href{https://catalog.uta.edu/archives/2019-2020/coursedescriptions/math/}{Undergraduate}: MATH 1302 College Algebra, MATH 1316
+Mathematics for Economics and Business Analysis, MATH 1421 Preparation for Calculus, MATH 2326 Calculus III, MATH 3330 Introduction to Matrics \& Linear Algebra
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Advising}
+\vspace{0.1in}
+
+    \subsection{Undergrad}
+\begin{EntriesTableDuration}
+
+\Duration{2024}{curr.} & Twymun Safford, \MSU. MANIM.\\
+\Duration{2024}{curr.} & Angeluis Sayavongsa-Vaughn, \MSU. MANIM.\\
+\Duration{2023}{2023} & Irmak Bukey, \Pomona. MANIM (reduction algebras).\\
+\Duration{2023}{2023} & Gisele Umutoni, \Pomona. MANIM (trees and proofs).\\
+\Duration{2022}{2023} & Irmak Bukey, \Pomona. Senior Thesis: Reduction Algebras: Verifying Solutions to Laplace’s Equation.\\
+\Duration{2022}{2023} & Andrew Shannon, \Pomona. Senior Theis: The Diffie-Hellman Problem in Lie Algebras Revisited.\\
+\Duration{2021}{2021} & Aaron Ortiz, \MSRI\ (MSRI-UP). Research Report: The defective parking space.\\
+\Duration{2021}{2021} & Lauren J. Quesada, \MSRI\ (MSRI-UP). Research Report: The defective parking space.\\
+\Duration{2021}{2021} & Cynthia Marie Rivera Sánchez, \MSRI\ (MSRI-UP). Research Report: The defective parking space.\\
+\Duration{2021}{2021} & Tomás Aguilar-Fraga, \MSRI\ (MSRI-UP). Research Report: $\ell$-Interval parking functions.\\
+\Duration{2021}{2021} & Kobe Lawson-Chavanu, \MSRI\ (MSRI-UP). Research Report: $\ell$-Interval parking functions.\\
+\Duration{2021}{2021} & Dirk Tolson III, \MSRI\ (MSRI-UP). Research Report: $\ell$-Interval parking functions.\\
+\end{EntriesTableDuration}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Organizer}
+\begin{EntriesTableYear}
+\Year{2024}  &
+  \href{https://mathdwight.com/FRACTALS}{Fresh Researchers in Algebra, Combinatorics, and Topology Active Learning Seminar}.
+  \\
+\Year{2024}  &
+  \href{https://www.ams.org/meetings/sectional/2312\_program\_ss15.html\#title}{AMS Spring Eastern Sectional (Howard University) Special Session}
+ \end{EntriesTableYear}
+
 
 \end{document}
