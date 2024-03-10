@@ -1,18 +1,18 @@
 # Curriculum Vitae
 
-These are the LaTeX sources for my academic CV from leouieda.
+These are the LaTeX sources for my academic CV. (Much thanks to GitHub user leouieda!)
 
 **Download** the latest compiled PDF:
 [DAWilliamsII_CV.pdf](https://github.com/mathdwight/cv/raw/pdf/DAWilliamsII_CV.pdf)
 
 ## Template
 
-You're free to reuse and modify this template under the terms of the BSD
+leouieda: You're free to reuse and modify this template under the terms of the BSD
 3-clause License (see `LICENSE.txt`).
 
 To use it:
 
-* Click on the ["Use original template"](https://github.com/leouieda/cv/generate) (Dwight:or ["Use slightly modified template"](https://github.com/MathDwight/cv/generate))
+* Click on the ["Use original template"](https://github.com/leouieda/cv/generate) (Dwight: or ["Use slightly modified template"](https://github.com/MathDwight/cv/generate))
   button to grab a copy of the repository.
 * Install Tectonic, either from their website or using the conda
   `environment.yml` file provided in the repository.
