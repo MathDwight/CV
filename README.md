@@ -1,9 +1,9 @@
 # Curriculum Vitae
 
-These are the LaTeX sources for my academic CV.
+These are the LaTeX sources for my academic CV from leouieda.
 
 **Download** the latest compiled PDF:
-[cv.pdf](https://github.com/leouieda/cv/raw/pdf/cv.pdf)
+[cv.pdf](https://github.com/mathdwight/cv/raw/pdf/cv.pdf)
 
 ## Template
 
@@ -12,7 +12,7 @@ You're free to reuse and modify this template under the terms of the BSD
 
 To use it:
 
-* Click on the ["Use this template"](https://github.com/leouieda/cv/generate)
+* Click on the ["Use original template"](https://github.com/leouieda/cv/generate) or ["Use slightly modified template"](https://github.com/MathDwight/cv/generate)
   button to grab a copy of the repository.
 * Install Tectonic, either from their website or using the conda
   `environment.yml` file provided in the repository.
@@ -21,7 +21,7 @@ To use it:
 * Push your changes and GitHub Actions should do it's magic and make the PDF
   available at `https://github.com/YOURUSERNAME/cv/raw/pdf/cv.pdf`.
 
-### About
+### About (from leouieda)
 
 I decided to make my own template after using `moderncv` for a while.
 I wanted a cleaner look and something that is more unique (as much as an academic
