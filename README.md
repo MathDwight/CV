@@ -1,27 +1,27 @@
-# Curriculum Vitae
+# Curriculum Vitae Summary (2-pager)
 
-These are the LaTeX sources for my academic CV. (Much thanks to GitHub user leouieda <-- Leonardo Uieda!)
+These are the LaTeX sources for my academic CV summary i.e. a 2-pager. (Much thanks to Leonardo Uieda --> GitHub user leouieda <-- )
 
 **Download** the latest compiled PDF:
-[DAWilliamsII_CV.pdf](https://github.com/mathdwight/cv/raw/pdf/DwightCVSummary.pdf)
+[DwightCV2pager.pdf](https://github.com/mathdwight/cv/raw/pdf/DwightCV2pager.pdf)
+---------------------------------------------------------------------------------------
+### From Leonardo Uieda 
 
 ## Template
 
-leouieda: You're free to reuse and modify this template under the terms of the BSD
+You're free to reuse and modify this template under the terms of the BSD
 3-clause License (see `LICENSE.txt`).
 
 To use it:
 
-* Click on the ["Use original template"](https://github.com/leouieda/cv/generate) (Dwight: or ["Use slightly modified template"](https://github.com/MathDwight/cv/generate))
+* Click on the ["Use original template"](https://github.com/leouieda/cv/generate)
   button to grab a copy of the repository.
 * Install Tectonic, either from their website or using the conda
   `environment.yml` file provided in the repository.
 * Fill out the variables and fields in the `.tex` file.
 * Compile the PDF to check the results with `make show`.
 * Push your changes and GitHub Actions should do it's magic and make the PDF
-  available at `https://github.com/YOURUSERNAME/cv/raw/pdf/cv.pdf` (Dwight: Need to modify .tex file if using modified template: `https://github.com/YOURUSERNAME/cv/raw/pdf/YOURNAMEcv.pdf`).
-
-### More from Leonardo Uieda below
+  available at `https://github.com/YOURUSERNAME/cv/raw/pdf/cv.pdf`
 
 ## About 
 
