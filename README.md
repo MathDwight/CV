@@ -1,4 +1,4 @@
-# Curriculum Vitae Summary (2-page CV)
+# Curriculum Vitae Summary (CV Short)
 
 These are the LaTeX sources for my academic CV summary i.e. a 2-pager. 
 
