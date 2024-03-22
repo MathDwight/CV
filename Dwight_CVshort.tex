@@ -7,6 +7,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Adopted and slightly modified by Dwight in Spring 2024. 
 % Thank you, again, Leonardo Uieda!
+% For original: https://github.com/leouieda/cv/
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[10pt,a4paper]{article}
@@ -18,16 +19,21 @@
 \newcommand{\MiddleName}{Anderson}
 \newcommand{\LastName}{Williams II}
 \newcommand{\Initials}{DA}
-\newcommand{\AcaSuffix}{PhD}
+\newcommand{\AcaSuffix}{PhD} 
 \newcommand{\Pronouns}{he/his}
 \newcommand{\MyName}{\FirstName\ \MiddleName\ \LastName,\ \AcaSuffix}
 \newcommand{\Me}{\underline{\LastName, \Initials}}  % For citations
-\newcommand{\Profile}{mathdwight} % common profile name
+\newcommand{\Profile}{mathdwight} % common profile name 
 \newcommand{\Email}{Dwight.WilliamsII@morgan.edu}
 \newcommand{\PersonalWebsite}{www.\Profile.com}
-\newcommand{\arXivWebsite}{arxiv.org/a/williams\_d\_5.html}
-\newcommand{\ORCID}{0000-0003-2611-2388}
+% Profiles 
+\newcommand{\arXivProfile}{williams\_d\_5}
 \newcommand{\GitHubProfile}{\Profile}
+\newcommand{\GoogleScholarProfile}{vLtfxSIAAAAJ}
+\newcommand{\ORCIDProfile}{0000-0003-2611-2388}
+\newcommand{\RGProfile}{Dwight-Williams-II}
+\newcommand{\SciRateProfile}{\Profile}
+\newcommand{\ZoteroProfile}{\Profile}
 
 % Useful aliases
 \newcommand{\MSU}{Morgan State University}
@@ -37,6 +43,7 @@
 \newcommand{\ISU}{Iowa State University}
 \newcommand{\Pomona}{Pomona College}
 \newcommand{\MSRIUP}{Mathematical Sciences Research Institute Undergraduate Program}
+\newcommand{\MLFRJ}{Math Leaders 4 Racial Justice}
 \newcommand{\CAD}{Charles A. Dana Center}
 \newcommand{\CADUT}{Charles A. Dana Center at The University of Texas at Austin}
 
@@ -46,7 +53,7 @@
 \newcommand{\Jonas}{Hartwig, JT}
 \newcommand{\PEH}{Harris, PE}
 \newcommand{\Rebecca}{Garcia, RE}
-%\newcommand{\David}{Kang, D}
+%\newcommand{\David}{Kung, D}
 \newcommand{\Yasmin}{Aguillon, Y}
 %\newcommand{\UGCollab{\Yasmin}}{\textbf{Aguillon, Y}}
 \newcommand{\Dylan}{Alvarenga, D}
@@ -70,6 +77,7 @@
 \newcommand{\Simone}{Sisneros-Thiry, S}
 \newcommand{\Miriam}{Gates, M}
 \newcommand{\Carl}{Westine, C}
+\newcommand{\Shanise}{Walker, S}        
 
 \newcommand{\Imhotep}{Hogan, IB}
 \newcommand{\Tomas}{Aguilar-Fraga, T}
@@ -93,8 +101,15 @@
 \newcommand{\Kimberly}{Harry, KJ}
 \newcommand{\Jennifer}{Elder, J}
 
+\newcommand{\Kate}{Melhuish, KM}
+\newcommand{\Kristen}{Lew, KM}
+\newcommand{\Lino}{Guajardo, LR}
+\newcommand{\Norman}{Contreras, N}
+\newcommand{\Paul}{Dawkins, PC}
+\newcommand{\Alexander}{Diaz-Lopez, A} 
+\newcommand{\KyeongHah}{Roh, KH}
 
-% To emphasize pre-baccalaureate, pre-doctoral status (added by Dwight)
+% To emphasize pre-baccalaureate, pre-doctoral status 
 \newcommand{\UGCollab}[1]{\textbf{#1}}
 \newcommand{\GradCollab}[1]{\textit{#1}}
 
@@ -146,8 +161,7 @@
 % Configure section titles
 \usepackage{titlesec}
 
-
-% mathy packages (added by Dwight)
+% mathy packages 
 \usepackage{amssymb, amsthm, amsmath, mathtools}
 
 % Fancy header configuration
@@ -159,7 +173,6 @@
 
 % Template configuration
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \geometry{%
   margin=12.5mm,
   headsep=0mm,
@@ -174,7 +187,7 @@
 \definecolor{lightgray}{gray}{0.9}
 \definecolor{mediumblue}{HTML}{2060c2}
 \definecolor{lightblue}{HTML}{a0c3ff}
-%%% Additinoal colors (added by Dwight)
+%%% Additinoal colors 
 \definecolor{darkorange}{rgb}{1.0, 0.55, 0.0}
 \definecolor{darkorangex}{rgb}{0.89, 0.49, 0.0}
 \definecolor{cardinal}{rgb}{0.77, 0.12, 0.23}
@@ -253,19 +266,35 @@
 \newcommand{\Future}{future}
 
 % Macros to add links and mark publications
-
 \newcommand{\DOI}[1]{DOI: \href{https://doi.org/#1}{#1}}
 \newcommand{\Website}[1]{\href{https://#1}{#1}}
-
 \newcommand{\Preprint}[1]{Preprint: \href{https://doi.org/#1}{#1}}
 
-\newcommand{\GitHub}[1]{GitHub: \href{https://github.com/#1}{#1}}
-% more (dded by Dwight)
-\newcommand\arXivlink[1]{\href{https://arxiv.org/abs/#1}{#1}}
-		\newcommand\arXiv[1]{arXiv: \arXivlink{#1}}
-\newcommand{\Scholar}[1]{Google: \href{#1}{Scholar}}
+% Commands to display profiles with academicons and fontawesome
+\newcommand{\arXiv}{arXiv: \href{https://arXiv.org/a/\arXivProfile.html}{\arXivProfile}}
+\newcommand{\arXivIcon}{\href{https://arXiv.org/a/\arXivProfile}{\aiarXiv}}
+
+\newcommand{\GitHub}{GitHub: \href{https://github.com/\GitHubProfile}{\GitHubProfile}}
+\newcommand{\GitHubIcon}{\href{https://github.com/\GitHubProfile}{\faGithub}}
+
+\newcommand{\GoogleScholar}{Google: \href{https://scholar.google.com/citations?=\GoogleScholarProfile}{\GoogleScholarProfile}}
+\newcommand{\GoogleScholarIcon}{\href{https://scholar.google.com/citations?user=\GoogleScholarProfile}{\aiGoogleScholar}}
+
+\newcommand{\ORCID}{ORCID: \href{https://ORCID.org/\ORCIDProfile}{\ORCIDProfile}}
+\newcommand{\ORCIDIcon}{\href{https://ORCID.org/\ORCIDProfile}{\aiOrcid}}
+
+\newcommand{\RG}{ResearchGate: \href{https://researchgate.net/profile/\RGProfile}{\RGProfile}}
+\newcommand{\RGIcon}{\href{https://researchgate.net/profile/\RGProfile}{\aiResearchGate}}
+
+\newcommand{\SciRate}{SciRate: \href{https://SciRate.com/\SciRateProfile}{\SciRateProfile}}
+\newcommand{\SciRateIcon}{\href{https://SciRate.com/\SciRateProfile}{\aiSciRate}}
+
+\newcommand{\Zotero}{Zotero: \href{https://zotero.org/\ZoteroProfile}{\ZoteroProfile}}
+\newcommand{\ZoteroIcon}{\href{https://zotero.org/\ZoteroProfile}{\aiZotero}}
+
+
+\newcommand{\arXivAbs}[1]{arXiv: \href{https://arXiv.org/abs/#1}{#1}}
 \newcommand{\homepage}[1]{\href{https://#1.com}{homepage}}
-\newcommand{\Zotero}[1]{Zotero: \href{https://zotero.org/#1}{#1}}
 
 % Define command to insert month name and year as date
 \newdateformat{monthyear}{\monthname[\THEMONTH] \THEYEAR}
@@ -304,40 +333,29 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-\begin{minipage}[t]{0.5\textwidth}
-  {\fontsize{20pt}{0}\selectfont\MyName\ (\Pronouns)} %\Website{\PersonalWebsite}
+\begin{minipage}[t]{0.6\textwidth}
+  {\fontsize{20pt}{0}\selectfont\MyName\ (\Pronouns)} \\\href{mailto:\Email}{\Email}  %\Website{\PersonalWebsite}
 \end{minipage}
-\begin{minipage}[t]{0.5\textwidth}
+\begin{minipage}[t]{0.4\textwidth}
   \begin{flushright}
     \Title{}\\\FullCV\\ \homepage{\Profile} %\Website{\PersonalWebsite}
   \end{flushright}
 \end{minipage}
 \\[0.1cm]
 \textcolor{lightgray}{\rule{\textwidth}{3pt}}
-\begin{minipage}[t]{0.5\textwidth}
-  arXiv: \Website{\arXivWebsite}
-  \\
- \GitHub{\GitHubProfile}%Profile
-  \\
-  ORCID: \href{https://orcid.org/\ORCID}{\ORCID}
-  \\
-  \Scholar{https://scholar.google.com/citations?user=vLtfxSIAAAAJ\&hl=en\&oi=ao}
-    \\\Zotero{\Profile}
-  
-\end{minipage}
-\begin{minipage}[t]{0.5\textwidth}
-  \begin{flushright}
-  Department of Mathematics
-  \\
-  Morgan State University
-  \\
-  1700 E Cold Spring Lane,\\ Baltimore, MD 21251\\
-    \href{mailto:\Email}{\Email}
-  \end{flushright}
-\end{minipage}
+%
+  Department of Mathematics, Morgan State University, 1700 E Cold Spring Lane, Baltimore, MD 21251\\
+  %Scholarly Profiles: 
+  \arXivIcon~$\mid$ 
+  \GitHubIcon~$\mid$ 
+  \GoogleScholarIcon~$\mid$ 
+  \ORCIDIcon~$\mid$
+  \RGIcon~$\mid$
+  \SciRateIcon~$\mid$
+  \ZoteroIcon
 \vspace{0.3cm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Professional Appointments}
+\section{Professional Appointments (post-PhD)}
 
 \begin{EntriesTableDuration}
   \Duration{2023}{\Ongoing}  &
@@ -347,16 +365,16 @@
   \textbf{Visiting Assistant Professor}, \Pomona.
   \\
   \Duration{2022}{2022}  &
-  \textbf{Facilitator}, \CAD\ (Math Leaders 4 Racial Justice).% Supervisor: David Kang.
+  \textbf{Facilitator}, \MLFRJ.% Supervisor: David Kang.
   \\
   \Duration{2020}{2021}  &
   \textbf{Postdoc Research Associate}, \ISU. Supervisor: Michael Young.
   \\
   \Duration{2021}{2021}  &
   \textbf{Postdoctoral Research Advisor}, \MSRIUP. Supervisors: Rebecca E. Garcia \& Pamela E. Harris.
-  \\
-  \Duration{2016}{2020}  &
-  \textbf{Graduate Teaching Assistant}, \UTA.
+  % \\
+  % \Duration{2016}{2020}  &
+  % \textbf{Graduate Teaching Assistant}, \UTA.
 \end{EntriesTableDuration}
 
 \section{Education}
@@ -385,13 +403,21 @@ Co-author names: \href{https://www.ams.org/profession/leaders/culture/JointResea
 \vspace{-0.3cm}
 % ℓ
 \begin{EntriesTableYear}
-\Year{2023}  & 
-  \textbf{Interval and $\ell$-interval Rational Parking Functions} (Manuscript).
+
+\Year{2024}  &
+  \textbf{Symplectic differential reduction algebras and skew-affine generalized Weyl algebras}.
   \newline
-  \arXiv{2311.14055}.  
+  In progress.
+  %\DOI{10.1016/j.geomphys.2023.104788}.
+  \newline
+  \Jonas; \Me. 
+ \\
+\Year{2023}  & 
+  \textbf{Interval and $\ell$-interval rational parking functions} (Submitted).
+  \newline
+  \arXivAbs{2311.14055}.  
   \newline
   \GradCollab{\Tomas}; \Jennifer; \Rebecca; \GradCollab{\KimberlyP}; \PEH; \GradCollab{\Kimberly}; \GradCollab{\Imhotep}; \GradCollab{\Jakeyl}; \GradCollab{\Jan}; \GradCollab{\Kobe}; \Carlos; \GradCollab{\Cas}; \GradCollab{\DanielTwo}; \GradCollab{\Dirk}; \Me.
-  %\GitHub{compgeolab/micromag-euler-dipole}.
   \\
 \Year{2023}  &
   \textbf{On parking functions and the Tower of Hanoi}.
@@ -400,7 +426,6 @@ Co-author names: \href{https://www.ams.org/profession/leaders/culture/JointResea
   \DOI{10.1080/00029890.2023.2206311}.
   \newline
   \UGCollab{\Yasmin}; \UGCollab{\Dylan}; \PEH; \UGCollab{\Surya}; \GradCollab{\Carlos}; \GradCollab{\Cas}; \UGCollab{\Zia}; \UGCollab{\Camelle}; \Me.
-  %\GitHub{compgeolab/micromag-euler-dipole}.
   \\
 \Year{2023}  &
   \textbf{Ghost center and representations of the diagonal reduction algebra of $\mathfrak{osp}(1|2)$}.
@@ -408,8 +433,7 @@ Co-author names: \href{https://www.ams.org/profession/leaders/culture/JointResea
   Journal of Geometry and Physics.
   \DOI{10.1016/j.geomphys.2023.104788}.
   \newline
-  \Jonas; \Me. %\Ricardo; \Janine; \Roger.
-  %\GitHub{compgeolab/micromag-euler-dipole}.
+  \Jonas; \Me. 
   \\
 \Year{2022}  &
   \textbf{Diagonal reduction algebra for $\mathfrak{osp}(1|2)$}.
@@ -417,8 +441,7 @@ Co-author names: \href{https://www.ams.org/profession/leaders/culture/JointResea
   Theoretical and Mathematical Physics.
   \DOI{10.1134/S0040577922020015} (\href{https://doi.org/10.4213/tmf10138}{for Russian version})
   \newline
-  \Jonas; \Me. %\Ricardo; \Janine; \Roger.
-  %\GitHub{compgeolab/micromag-euler-dipole}.
+  \Jonas; \Me.
  \end{EntriesTableYear}
 
 \vspace{-.6cm}  
@@ -426,14 +449,21 @@ Co-author names: \href{https://www.ams.org/profession/leaders/culture/JointResea
 \vspace{-0.3cm}
 
 \begin{EntriesTableYear}
+
+\Year{2024} &
+\textbf{Opposing
+Dimensions in Mathematicians’ Counter Narratives Written for Undergraduate Students}.
+\newline
+Research in Undergraduate Mathematics Education 26th Annual Conference. \href{http://sigmaa.maa.org/rume/crume2024/papers/134.pdf}{Proceedings (in press)}.
+\newline
+\Kate; \GradCollab{\Lino}; \GradCollab{\Norman}; \Paul; \Alexander; \Rebecca; \Kristen; \PEH; \KyeongHah; \Shanise; \Me; \Aris.  
+\\
 \Year{2021}  &
   \textbf{Informing Change: Stories of Graduate Students from Underrepresented Groups in Mathematics Doctoral Programs}.
   \newline
   Association for the Study of Higher Education 46\textsuperscript{th} General Conference. \href{https://www.ashe.ws//Files/Past Conferences/ASHE 2021 Program Book.pdf}{Program book}.
-  %\DOI{10.1080/00029890.2023.2206311}.
   \newline
   \Carl; \Sarah; \Michael; \GradCollab{\Maya}; \Me; \PEH.
-  %\GitHub{compgeolab/micromag-euler-dipole}.
   \\
 \Year{2021}  &
   \textbf{Studying Successful Doctoral Students in Mathematics from Underrepresented Groups}.
@@ -453,7 +483,6 @@ Co-author names: \href{https://www.ams.org/profession/leaders/culture/JointResea
   \href{http://digitaleditions.walsworthprintgroup.com/publication/?m=7656\&i=749450\&p=26\&fbclid=IwAR19q6M4ZQ1I8uncyU-iuGHsHfz-6JHFiZFHrg9thmyGqXAESJYRlaHXijc\&ver=html5}{Digital edition}.
   \newline
   \Rebecca; \PEH; \Me; \GradCollab{\Carlos}; \GradCollab{\Cas}; \UGCollab{\Tomas}; \UGCollab{\Yasmin}; \UGCollab{\Daniel}; \UGCollab{\Dylan}; \UGCollab{\Aalliyah}; \UGCollab{\Parneet}; \UGCollab{\Imhotep}; \UGCollab{\Jakeyl}; \UGCollab{\Kobe}; \UGCollab{\Lina}; \UGCollab{\Aaron}; \UGCollab{\Lauren}; \UGCollab{\Cynthia}; \UGCollab{\Christopher}; \UGCollab{\Camelle}; \UGCollab{\Dirk}; \UGCollab{\Jacob}; \UGCollab{\Pamela}.
-  %\GitHub{compgeolab/micromag-euler-dipole}.
  \end{EntriesTableYear}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Instructor of Record}
@@ -461,10 +490,10 @@ Co-author names: \href{https://www.ams.org/profession/leaders/culture/JointResea
 
     \subsection{\MSU}
 \href{https://catalog.morgan.edu/preview_program.php?catoid=25\&poid=5681\&hl}{Graduate}: MATH 505 Abstract Algebra I, MATH 506 Abstract Algebra II.\\
-\href{https://catalog.morgan.edu/preview_program.php?catoid=24\&poid=5514\&hl}{Undergraduate}: MATH 413 Algebraic Structures I, MATH 431 Mathematical Theory of Statistics, MATH 432 Mathematical Theory of Statistics II.
+\href{https://catalog.morgan.edu/preview_program.php?catoid=24\&poid=5514\&hl}{Undergraduate}: MATH 413 Algebraic Structures I, MATH 431 Mathematical Theory of Statistics I, MATH 432 Mathematical Theory of Statistics II.
 
     \subsection{\Pomona}
-\href{https://catalog.pomona.edu/content.php?filter%5B27%5D=MATH&filter%5B29%5D=&filter%5Bcourse_type%5D=-1&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=43&expand=&navoid=8669&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter}{Undergraduate}: MATH PO 032 Calculs III, MATH 101 PO Introduction to Analysis, MATH 171 PO Abstract Algebra I: Groups \& Rings.
+\href{https://catalog.pomona.edu/content.php?filter%5B27%5D=MATH&filter%5B29%5D=&filter%5Bcourse_type%5D=-1&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=43&expand=&navoid=8669&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter}{Undergraduate}: MATH PO 032 Calculs III, MATH 101 PO Introduction to Analysis, MATH 171 PO Abstract Algebra I.%: Groups \& Rings.
 
     \subsection{\UTA}
 \href{https://catalog.uta.edu/archives/2019-2020/coursedescriptions/math/}{Undergraduate}: MATH 1302 College Algebra, MATH 1316
@@ -477,7 +506,6 @@ Mathematics for Economics and Business Analysis, MATH 1421 Preparation for Calcu
     \vspace{-0.3cm}
     \begin{EntriesTableDuration}
 \Duration{2024}{\Ongoing} & Twymun Safford, Angeluis Sayavongsa-Vaughn. \MSU. MANIM.\\
-%\Duration{2024}{curr.} & Angeluis Sayavongsa-Vaughn, \MSU. MANIM.\\
 \Duration{2023}{2023} & Irmak Bukey, Gisele Umutoni. \Pomona. MANIM (reduction algebras, trees, proofs).\\
 \Duration{2022}{2023} & Irmak Bukey, \Pomona. Senior Thesis: Reduction Algebras: Verifying Solutions to Laplace’s Equation.\\
 \Duration{2022}{2023} & Andrew Shannon, \Pomona. Senior Theis: The Diffie-Hellman Problem in Lie Algebras Revisited.\\
@@ -489,14 +517,18 @@ Mathematics for Economics and Business Analysis, MATH 1421 Preparation for Calcu
 %\vspace{-0.1cm}
 \begin{EntriesTableDuration}
 Committee   &
- Actuarial Science (Department-special), Graduate Comprehensive Exam (Department-standing), Graduate Curriculum (Department-standing).
+ Actuarial Science (Dept.-special), Graduate Comprehensive Exam (Dept.-standing), Graduate Curriculum (Dept.-standing).
   \\
 Membership
   &
- American Mathematical Society, Mathematical Association of America, National Association of Mathematicians.
+ \href{https://www.ams.org/}{AMS}, \href{https://maa.org/}{MAA}, \href{https://www.nam-math.org/}{NAM}.
+ %American Mathematical Society, Mathematical Association of America, National Association of Mathematicians.
   \\
 Organizer  &
- \href{https://\Profile.com/FRACTALS}{Fresh Researchers in Algebra, Combinatorics, and Topology Active Learning Seminar}, \href{https://www.ams.org/meetings/sectional/2312\_program\_ss15.html\#title}{AMS Spring Eastern Sectional (Howard University) Special Session}.
+ \href{https://\Profile.com/FRACTALS}{Active learning seminars},
+ %\href{https://\Profile.com/FRACTALS}{Fresh Researchers in Algebra, Combinatorics, and Topology Active Learning Seminar},
+ \href{https://www.ams.org/meetings/sectional/2312\_program\_ss15.html\#title}{AMS Special Sessions}.
+ %\href{https://www.ams.org/meetings/sectional/2312\_program\_ss15.html\#title}{AMS Spring Eastern Sectional (Howard University) Special Session}.
 \\
 Referee & Communications in Algebra.  
 
