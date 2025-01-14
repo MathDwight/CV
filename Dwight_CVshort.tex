@@ -1,19 +1,19 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Leonardo Uieda %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% A clean template for an academic CV. This is a short summary version.
-%
-% Uses tabularx to create two column entries (date and job/edu/citation).
-% Defines commands to make adding entries simpler.
-%
+%Copyright (c) 2017 Leonardo Uieda
+%All rights reserved.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Adopted and slightly modified by Dwight in Spring 2024. 
-% Thank you, again, Leonardo Uieda!
+% Adopted from Leonardo Uieda: "A clean template for an academic CV. This is a short summary version." 
+% Slightly modified by Dwight Anderson Williams II in Spring 2024. 
 % For original: https://github.com/leouieda/cv/
+% More from Leonard Uieda:
+% "Uses tabularx to create two column entries (date and job/edu/citation).
+% Defines commands to make adding entries simpler."
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[10pt,a4paper]{article}
 
 % Identifying information
-\newcommand{\Title}{Curriculum Vit\ae\ Summary}
+\newcommand{\Title}{Curriculum Vit\ae\ Summary 2024--2025}
 \newcommand{\FullCV}{\href{https://mathdwight.com/files/DAWilliamsII_CV.pdf}{Extended Curriculum Vit\ae}}
 \newcommand{\FirstName}{Dwight}
 \newcommand{\MiddleName}{Anderson}
@@ -24,9 +24,10 @@
 \newcommand{\MyName}{\FirstName\ \MiddleName\ \LastName,\ \AcaSuffix}
 \newcommand{\Me}{\underline{\LastName, \Initials}}  % For citations
 \newcommand{\Profile}{mathdwight} % common profile name 
-\newcommand{\Email}{Dwight.WilliamsII@morgan.edu}
+\newcommand{\Email}{dwight.williamsii@morgan.edu}
 \newcommand{\PersonalWebsite}{www.\Profile.com}
-% Profiles 
+
+% Academic Profiles 
 \newcommand{\arXivProfile}{williams\_d\_5}
 \newcommand{\GitHubProfile}{\Profile}
 \newcommand{\GoogleScholarProfile}{vLtfxSIAAAAJ}
@@ -46,32 +47,31 @@
 \newcommand{\MLFRJ}{Math Leaders 4 Racial Justice}
 \newcommand{\CAD}{Charles A. Dana Center}
 \newcommand{\CADUT}{Charles A. Dana Center at The University of Texas at Austin}
-
-
 \newcommand{\UWM}{UW-Milwaukee}
-
+\newcommand{\NSF}{National Science Foundation}
+\newcommand{\PRISSEMllc}{PRISSEM Academic Services, LLC}
+\newcommand{\PRISSEM}{PRISSEM Academic Services}
+\newcommand{\IHQC}{IBM--HBCU Quantum Center}
+\newcommand{\Yale}{Yale University}
+\newcommand{\YaleASCEND}{Alliance for Scholarship, Collaboration, Engagement, Networking, and Development}
+\newcommand{\SUMRY}{Summer Undergraduate Math Research at Yale}
+\newcommand{\AMS}{American Mathematical Society}
+\newcommand{\MAA}{Mathematical Association of America}
+\newcommand{\NAM}{National Association of Mathematicians}
+\newcommand{\SCMNS}{School of Computer, Mathematical, and Natural Sciences}
 
 % Names for citing coauthors
 \newcommand{\Dimitar}{Grantcharov, D}
 \newcommand{\Jonas}{Hartwig, JT}
 \newcommand{\PEH}{Harris, PE}
 \newcommand{\Rebecca}{Garcia, RE}
-%\newcommand{\David}{Kung, D}
 \newcommand{\Yasmin}{Aguillon, Y}
-%\newcommand{\UGCollab{\Yasmin}}{\textbf{Aguillon, Y}}
 \newcommand{\Dylan}{Alvarenga, D}
-%\newcommand{\DylanUG}{\textbf{Alvarenga, D}}
 \newcommand{\Surya}{Kotapati, S}
-%\newcommand{\UGCollab{\Surya}}{\textbf{Kotapati, S}}
 \newcommand{\Carlos}{Mart\'{i}nez~Mori, JC}
-%\newcommand{\GradCollab{\Carlos}}{\textit{Mart\'{i}nez Mori, JC}}
 \newcommand{\Cas}{Monroe, CD}
-%\newcommand{\GradCollab{\Cas}}{\textit{Monroe, CD}}
 \newcommand{\Zia}{Saylor, Z}
-%\newcommand{\UGCollab{\Zia}}{\textbf{Saylor, Z}}
 \newcommand{\Camelle}{Tieu, C}
-%\newcommand{\UGCollab{\Camelle}}{\textbf{Tieu, C}}
-
 \newcommand{\Michael}{Young, M}
 \newcommand{\Sarah}{Sword, S}
 \newcommand{\Aris}{Winger, A}
@@ -81,7 +81,6 @@
 \newcommand{\Miriam}{Gates, M}
 \newcommand{\Carl}{Westine, C}
 \newcommand{\Shanise}{Walker, S}        
-
 \newcommand{\Imhotep}{Hogan, IB}
 \newcommand{\Tomas}{Aguilar-Fraga, T}
 \newcommand{\Daniel}{Alofamoni~Quiñonez, D} 
@@ -98,14 +97,11 @@
 \newcommand{\Dirk}{Tolson III, D}
 \newcommand{\Jacob}{van~der~Leeuw, J}
 \newcommand{\Pamela}{Vargas, P}
-
 \newcommand{\KimberlyP}{Hadaway, KP}
 \newcommand{\Jan}{Kretschmann, J}
 \newcommand{\Kimberly}{Harry, KJ}
 \newcommand{\Jennifer}{Elder, J}
-
 \newcommand{\Alex}{Moon, A}
-
 \newcommand{\Kate}{Melhuish, KM}
 \newcommand{\Kristen}{Lew, KM}
 \newcommand{\Lino}{Guajardo, LR}
@@ -113,6 +109,8 @@
 \newcommand{\Paul}{Dawkins, PC}
 \newcommand{\Alexander}{Diaz-Lopez, A} 
 \newcommand{\KyeongHah}{Roh, KH}
+\newcommand{\Edna}{Jones, E} 
+\newcommand{\Priyam}{Patel, P}
 
 % To emphasize pre-baccalaureate, pre-doctoral status 
 \newcommand{\UGCollab}[1]{\textbf{#1}}
@@ -305,7 +303,7 @@
 
 
 \newcommand{\arXivAbs}[1]{arXiv: \href{https://arXiv.org/abs/#1}{#1}}
-\newcommand{\homepage}[1]{\href{https://#1.com}{homepage}}
+\newcommand{\homepage}[1]{\href{https://#1.com}{Homepage}}
 
 % Define command to insert month name and year as date
 \newdateformat{monthyear}{\monthname[\THEMONTH] \THEYEAR}
@@ -341,7 +339,7 @@
   pdftitle={\Title{} - \MyName},
   pdfauthor={\MyName},
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
 \begin{minipage}[t]{0.6\textwidth}
@@ -349,7 +347,7 @@
 \end{minipage}
 \begin{minipage}[t]{0.4\textwidth}
   \begin{flushright}
-    \Title{}\\\FullCV\\ \homepage{\Profile} %\Website{\PersonalWebsite}
+    \Title{}\\ \href{https://whse2.morgan.edu/apex/f?p=372:1}{\MSU\ Directory} \\ \homepage{\Profile}
   \end{flushright}
 \end{minipage}
 \\[0.1cm]
@@ -364,211 +362,166 @@
   \RGIcon~$\mid$
   \SciRateIcon~$\mid$
   \ZoteroIcon
-\vspace{0.3cm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Professional Appointments (post-PhD)}
+\section{Appointments (since PhD)}
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{Professioriate}
+\vspace{-0.5cm}
 
 \begin{EntriesTableDuration}
   \Duration{2023}{\Ongoing}  &
-  \textbf{Assistant Professor}, \MSU. 
+  \textbf{Tenure-track Assistant Professor}, \MSU\ $\leftarrow$ HBCU Faculty. 
   \\
-  \Duration{2022}{2023}  &
+    \Duration{2022}{2023}  &
   \textbf{Visiting Assistant Professor}, \Pomona.
-  \\
-  \Duration{2022}{2022}  &
-  \textbf{Facilitator}, \MLFRJ.% Supervisor: David Kang.
-  \\
-  \Duration{2020}{2021}  &
-  \textbf{Postdoc Research Associate}, \ISU. Supervisor: Michael Young.
-  \\
-  \Duration{2021}{2021}  &
-  \textbf{Postdoctoral Research Advisor}, \MSRIUP. Supervisors: Rebecca E. Garcia \& Pamela E. Harris.
-  % \\
-  % \Duration{2016}{2020}  &
-  % \textbf{Graduate Teaching Assistant}, \UTA.
 \end{EntriesTableDuration}
 
+\vspace{-0.7cm}
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{Non-professioriate}
+\vspace{-0.5cm}
+
+\begin{EntriesTableDuration}
+\Duration{2025}{2025} &
+\textbf{Faculty Research Fellow}, \YaleASCEND\ (ASCEND). \Yale. 
+\\
+\Duration{2024}{2025}  &
+\textbf{Writing Coach}, consultant to the \IHQC\ via \PRISSEMllc.
+\\
+\Duration{2022}{2022}  &
+\textbf{Facilitator}, \MLFRJ\ via the \CAD.
+\\
+\Duration{2020}{2021}  &
+\textbf{Postdoc Research Associate (\NSF\ (NSF) Grant EES--1920753)}, \ISU. Supervisor/PI: Michael Young.
+\\
+\Duration{2021}{2021}  &
+\textbf{Postdoctoral Research Advisor}, \MSRIUP\ (MSRI-UP). Supervisors: Rebecca E. Garcia \& Pamela E. Harris.
+\end{EntriesTableDuration}
+
+\vspace{-0.3cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Education}
 
 \begin{EntriesTableDuration}
   \Duration{2016}{2020}  &
   \textbf{PhD in Mathematics}, \UTA.
-  Advisor: Dimitar Grantcharov.
-  %\DOI{10.6084/m9.figshare.16883689}
+  Advisor: Dimitar Grantcharov. \href{http://hdl.handle.net/10106/29148}{Dissertation}.
   \\
   \Duration{2012}{2014}  &
   \textbf{MS in Pure Mathematics}, \FSU.
-  %\DOI{10.6084/m9.figshare.16882300}
   \\
   \Duration{2008}{2012}  &
-  \textbf{BS in Mathematics}, \FAMU.
-  %\DOI{10.6084/m9.figshare.963547}
+  \textbf{BS in Mathematics}, \FAMU\ $\leftarrow$ HBCU Alumnus.
+  
 \end{EntriesTableDuration}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{\texorpdfstring{\LARGE\textbf{Research/Service/Teaching Summary: 2023--Present}}{Research/Service/Teaching Summary: 2023--Present}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Recent Research}  
-\vspace{0.1in}
-Co-author names: \href{https://www.ams.org/profession/leaders/culture/JointResearchandItsPublicationfinal.pdf}{alphabetical in mathematics}; \textbf{pre-baccalaureate}/\textit{pre-doctoral} by date of submission.
- 
+\section{Research}  
+\vspace{0.1cm}
+\href{https://www.ams.org/profession/leaders/culture/JointResearchandItsPublicationfinal.pdf}{Co-author names}: 
+\textcolor{blue}{$\big|$}alphabetical order within vertical bars\textcolor{blue}{$\big|$}; \textbf{pre-baccalaureate}/\textit{pre-doctoral} by date of submission.
     \vspace{-.3cm}
+%%%%%%%%%%%%%%%%%%%%%    
     \subsection{Articles in Mathematics}
 \vspace{-0.3cm}
-% ℓ
-\begin{EntriesTableYear}
 
-% \Year{2024}  &
-%  \textbf{Defective parking functions and Young tableaux} (in progress).
-%   \newline
-%   \PEH; \GradCollab{\Alex}; \GradCollab{\Aaron}; \GradCollab{\Lauren}; \UGCollab{\Cynthia}; \Me. 
-%  \\
-\Year{2024}  &
-  \textbf{Symplectic differential reduction algebras and skew-affine generalized Weyl algebras} (submitted).
+\begin{EntriesTableYear}
+\Year{2025}  &
+  \textbf{Symplectic differential reduction algebras and skew-affine generalized Weyl algebras}.
   \newline
-  \arXivAbs{2403.15968}. \Publication{10.3842/SIGMA.2025.001}{SIGMA}, \arXivAbs{2403.15968}. 
+  \Publication{10.3842/SIGMA.2025.001}{SIGMA}, \arXivAbs{2403.15968}. 
   \newline
-  \Jonas; \Me. 
+  \textcolor{blue}{$\big|$}\Jonas; \Me\textcolor{blue}{$\big|$}. 
  \\
-\Year{2023}  & 
-  \textbf{Interval and $\ell$-interval rational parking functions} (submitted).
+\Year{2024}  &
+  \textbf{Action of $\mathfrak{osp}(1|2n)$ on polynomials tensor $\mathbb{C}^{0|2n}$} (submitted).
   \newline
-  \arXivAbs{2311.14055}.  
+   \arXivAbs{2408.12324}. 
   \newline
-  \GradCollab{\Tomas}; \Jennifer; \Rebecca; \GradCollab{\KimberlyP}; \PEH; \GradCollab{\Kimberly}; \GradCollab{\Imhotep}; \GradCollab{\Jakeyl}; \GradCollab{\Jan}; \GradCollab{\Kobe}; \Carlos; \GradCollab{\Cas}; \GradCollab{\DanielTwo}; \GradCollab{\Dirk}; \Me.
+   \Me. 
+ \\
+\Year{2024}  & 
+  \textbf{Interval and $\ell$-interval rational parking functions}.
+  \newline
+  \Publication{10.46298/dmtcs.12598}{Discrete Math. Theor. Comput. Sci.}, \arXivAbs{2311.14055}.  
+  \newline
+  \textcolor{blue}{$\big|$}\GradCollab{\Tomas}; \Jennifer; \Rebecca; \GradCollab{\KimberlyP}; \PEH; \GradCollab{\Kimberly}; \GradCollab{\Imhotep}; \GradCollab{\Jakeyl}; \GradCollab{\Jan}; \GradCollab{\Kobe}; \Carlos; \GradCollab{\Cas}; \GradCollab{\DanielTwo}; \GradCollab{\Dirk}; \Me\textcolor{blue}{$\big|$}.
   \\
 \Year{2023}  &
   \textbf{On parking functions and the Tower of Hanoi}.
   \newline
-  American Mathematical Monthly.
-  \DOI{10.1080/00029890.2023.2206311}.
+  \Publication{10.1080/00029890.2023.2206311}{Amer. Math. Monthly}, \arXivAbs{2206.00541}.
   \newline
-  \UGCollab{\Yasmin}; \UGCollab{\Dylan}; \PEH; \UGCollab{\Surya}; \GradCollab{\Carlos}; \GradCollab{\Cas}; \UGCollab{\Zia}; \UGCollab{\Camelle}; \Me.
+  \textcolor{blue}{$\big|$}\UGCollab{\Yasmin}; \UGCollab{\Dylan}; \PEH; \UGCollab{\Surya}; \GradCollab{\Carlos}; \GradCollab{\Cas}; \UGCollab{\Zia}; \UGCollab{\Camelle}; \Me\textcolor{blue}{$\big|$}.
   \\
 \Year{2023}  &
   \textbf{Ghost center and representations of the diagonal reduction algebra of $\mathfrak{osp}(1|2)$}.
   \newline
-  Journal of Geometry and Physics.
-  \DOI{10.1016/j.geomphys.2023.104788}.
+  \Publication{10.1016/j.geomphys.2023.104788}{J. Geom. Phys.}, \arXivAbs{2203.08068}.
   \newline
-  \Jonas; \Me. 
-  \\
-\Year{2022}  &
-  \textbf{Diagonal reduction algebra for $\mathfrak{osp}(1|2)$}.
-  \newline
-  Theoretical and Mathematical Physics.
-  \DOI{10.1134/S0040577922020015} (\href{https://doi.org/10.4213/tmf10138}{for Russian version})
-  \newline
-  \Jonas; \Me.
- \end{EntriesTableYear}
+  \textcolor{blue}{$\big|$}\Jonas; \Me\textcolor{blue}{$\big|$}. 
+  \end{EntriesTableYear}
 
 \vspace{-.6cm}  
+%%%%%%%%%%%%%%%%%%%%%    
     \subsection{Articles in Education}
 \vspace{-0.3cm}
 
 \begin{EntriesTableYear}
-
- \Year{2024} &
- \textbf{Humanizing proof-based mathematics instruction through experiences reading rich proofs and mathematician stories} (in progress).
- \newline
- $\mathcolor{blue}{\big|}$\GradCollab{\Norman}; \Paul; \GradCollab{\Lino};  \PEH; \Kristen; \Kate; \KyeongHah; \Me; \Aris$\mathcolor{blue}{\big|}$. 
- \\
 \Year{2024} &
-\textbf{Opposing
-Dimensions in Mathematicians’ Counter Narratives Written for Undergraduate Students}.
+\textbf{Humanizing proof-based mathematics instruction through experiences reading rich proofs and mathematician stories} (submitted).
 \newline
-
-Research in Undergraduate Mathematics Education 26th Annual Conference. \href{http://sigmaa.maa.org/rume/crume2024/papers/134.pdf}{Proceedings (in press)}.
+\textcolor{blue}{$\big|$}\GradCollab{\Norman}; \Paul; \GradCollab{\Lino};  \PEH; \Kristen; \Kate; \KyeongHah; \Me; \Aris\textcolor{blue}{$\big|$}.
+\\
+\Year{2024} &
+\textbf{Diverse storylines of entering the mathematics professoriate} (submitted).
 \newline
-\Kate; \GradCollab{\Lino}; \GradCollab{\Norman}; \Paul; \Alexander; \Rebecca; \Kristen; \PEH; \KyeongHah; \Shanise; \Me; \Aris.  
-%\\
-% \Year{2021}  &
-%   \textbf{Informing Change: Stories of Graduate Students from Underrepresented Groups in Mathematics Doctoral Programs}.
-%   \newline
-%   Association for the Study of Higher Education 46\textsuperscript{th} General Conference. \href{https://www.ashe.ws//Files/Past Conferences/ASHE 2021 Program Book.pdf}{Program book}.
-%   \newline
-%   \Carl; \Sarah; \Michael; \GradCollab{\Maya}; \Me; \PEH.
-%   \\
-% \Year{2021}  &
-%   \textbf{Studying Successful Doctoral Students in Mathematics from Underrepresented Groups}.
-%   \newline
-%   Accelerating Systemic Change Network (ASCN) \& Network of STEM Education Centers (NSEC) Transforming Institutions Conference 2021. \href{https://ascnhighered.org/ASCN/transforming_institutions/2021/program/posters/session_c/2/243631.html}{Poster webpage}.
-%   \newline
-%   \Sarah; \Michael; \Carl; \Aris; \GradCollab{\Maya}; \Me; \GradCollab{\Christian}; \Simone; \Miriam; \PEH.
+\Kate; \GradCollab{\Lino}; \Kristen; \textcolor{blue}{$\big|$}\Paul; \Alexander; \Rebecca; \PEH; \Edna; \Priyam; \KyeongHah; \Shanise; \Me; \Aris\textcolor{blue}{$\big|$}.
+\\
+\Year{2024} &
+\textbf{Opposing dimensions in mathematicians’ counter narratives written for undergraduate students}.
+\newline
+     \href{http://sigmaa.maa.org/rume/RUME26_Proceedings2024-letter.pdf}{Proceedings (PDF)} of the 26th Conference on Research on Undergraduate Mathematics.
+\newline
+\Kate; \GradCollab{\Lino}; \GradCollab{\Norman}; \textcolor{blue}{$\big|$}\Paul; \Alexander; \Rebecca; \Kristen; \PEH; \KyeongHah; \Shanise; \Me; \Aris\textcolor{blue}{$\big|$}.
+\textcolor{blue}{Citation note: Shanise Walker (Clark Atlanta); Pamela E. Harris (University of Wisconsin--Milwaukee).}
   \end{EntriesTableYear}
-
-    \subsection{Talks}
-    \vspace{-0.3cm}
-    \begin{EntriesTableDuration}
-March 2024 & "Reduction (Super)algebras", Algebra Seminar (online), \UWM \\
-March 2024 & "Lie superalgebras, representation theory, and mathematical physics", Colloquium (online), \MSU\\
-February 2024 & "Laplace's equation, Dirac's equation, and algebraic methods", AMS UTA Seminar (online), \UTA\\
-November 2023 & "Extremal Equations \& Algebraic Methods", Early Career Math Colloquium (online)
-\end{EntriesTableDuration}
-
-
-
   
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Exposition}
+\vspace{-.6cm}  
+%%%%%%%%%%%%%%%%%%%%%    
+\subsection{Grant Activity}
+\vspace{-0.3cm}
 
 \begin{EntriesTableYear}
-\Year{2022}  &
-  \textbf{People Over Math: A Co-created Principle for Successful Research Communities}.
-  \newline
-  MAA FOCUS.
-  \href{http://digitaleditions.walsworthprintgroup.com/publication/?m=7656\&i=749450\&p=26\&fbclid=IwAR19q6M4ZQ1I8uncyU-iuGHsHfz-6JHFiZFHrg9thmyGqXAESJYRlaHXijc\&ver=html5}{Digital edition}.
-  \newline
-  \Rebecca; \PEH; \Me; \GradCollab{\Carlos}; \GradCollab{\Cas}; \UGCollab{\Tomas}; \UGCollab{\Yasmin}; \UGCollab{\Daniel}; \UGCollab{\Dylan}; \UGCollab{\Aalliyah}; \UGCollab{\Parneet}; \UGCollab{\Imhotep}; \UGCollab{\Jakeyl}; \UGCollab{\Kobe}; \UGCollab{\Lina}; \UGCollab{\Aaron}; \UGCollab{\Lauren}; \UGCollab{\Cynthia}; \UGCollab{\Christopher}; \UGCollab{\Camelle}; \UGCollab{\Dirk}; \UGCollab{\Jacob}; \UGCollab{\Pamela}.
- \end{EntriesTableYear}
+\Year{2024}  & 
+  \textbf{NSF 23-598: Excellence in Research: Super representation theory, quantum spaces, and algebra maps} (Pending). PI: \Me.
+ \end{EntriesTableYear}  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Instructor of Record}
-\vspace{0.1in}
-
-    \subsection{\MSU}
-\href{https://catalog.morgan.edu/preview_program.php?catoid=25\&poid=5681\&hl}{Graduate}: MATH 505 Abstract Algebra I, MATH 506 Abstract Algebra II.\\
-\href{https://catalog.morgan.edu/preview_program.php?catoid=24\&poid=5514\&hl}{Undergraduate}: MATH 413 Algebraic Structures I, MATH 431 Mathematical Theory of Statistics I, MATH 432 Mathematical Theory of Statistics II.
-
-    \subsection{\Pomona}
-\href{https://catalog.pomona.edu/content.php?filter%5B27%5D=MATH&filter%5B29%5D=&filter%5Bcourse_type%5D=-1&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=43&expand=&navoid=8669&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter}{Undergraduate}: MATH PO 032 Calculs III, MATH 101 PO Introduction to Analysis, MATH 171 PO Abstract Algebra I.%: Groups \& Rings.
-
-    \subsection{\UTA}
-\href{https://catalog.uta.edu/archives/2019-2020/coursedescriptions/math/}{Undergraduate}: MATH 1302 College Algebra, MATH 1316
-Mathematics for Economics and Business Analysis, MATH 1421 Preparation for Calculus, MATH 2326 Calculus III, MATH 3330 Introduction to Matrics \& Linear Algebra.
+\section{Service}
+\vspace{0.1cm}
+\href{https://minoritymath.org/organizations/}{Acronyms for professional organizations}: \AMS\ (AMS); \MAA\ (MAA); \NAM\ (NAM).
+%%%%%%%%%%%%%%%%%%%%%    
+\subsection{Community}
+\textbf{Committee}: Maryland Statewide Math Group. \textbf{K--12 Education}: Baltimore City Community Based Mathematics Project--SET (Lead: Whitney Johnson). 
+%%%%%%%%%%%%%%%%%%%%%    
+\subsection{Profession}
+\textbf{Committees}: Inclusivity Prize (MAA); Nominations Subcommittee (Chair, NAM). \textbf{Conference/Seminar Organizer}: \href{https://\Profile.com/FRACTALS}{Fresh Researchers in Algebra, Combinatorics, and Topology Active Learning Seminar (FRACTALS)};  \href{https://www.ams.org/meetings/sectional/2312\_program\_ss15.html\#title}{AMS Spring Eastern Sectional (Howard University) Special Session}.  \textbf{Memberships}: AMS; MAA; NAM (Lifetime). \textbf{Referee}: Communications in Algebra. 
+%%%%%%%%%%%%%%%%%%%%%    
+\subsection{University}
+\textbf{Committees}: Graduate Comprehensive Exam (Department--standing); Graduate Curriculum (Department--standing); Actuarial Science (Department--special). \textbf{Student-facing}: MATH Club advising (undergraduate); Mathematical writing and \LaTeX\ daily log designer (graduate/undergraduate); POWER (Black Male Initiative) mentor (\SCMNS).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Advising}
-\vspace{0.1in}
-
-    \subsection{Undergrad}
-    \vspace{-0.3cm}
-    \begin{EntriesTableDuration}
-\Duration{2024}{\Ongoing} & Twymun Safford, Angeluis Sayavongsa-Vaughn. \MSU. \textit{MANIM+MATH+MENTORING}.\\
-\Duration{2023}{2023} & Irmak Bukey, Gisele Umutoni. \Pomona. Manim (reduction algebras, trees, proofs).\\
-\Duration{2022}{2023} & Irmak Bukey, \Pomona. Senior Thesis: Reduction Algebras: Verifying Solutions to Laplace’s Equation.\\
-\Duration{2022}{2023} & Andrew Shannon, \Pomona. Senior Thesis: The Diffie-Hellman Problem in Lie Algebras Revisited.\\
-\Duration{2021}{2021} & Aaron Ortiz, Lauren J. Quesada, Cynthia Marie Rivera Sánchez. \MSRIUP. Research Report: The defective parking space.\\
-\Duration{2021}{2021} & Tomás Aguilar-Fraga, Kobe Lawson-Chavanu, Dirk Tolson III. \MSRIUP. Research Report: $\ell$-Interval parking functions.\\
-\end{EntriesTableDuration}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Sample of Service}
-%\vspace{-0.1cm}
-\begin{EntriesTableDuration}
-Committee  &
- Actuarial Science (Dept.-special), Graduate Comprehensive Exam (Dept.-standing), Graduate Curriculum (Dept.-standing), Math Affinity Group (Statewide/University).
-  \\
-Membership &
- \href{https://www.ams.org/}{AMS}, \href{https://maa.org/}{MAA}, \href{https://www.nam-math.org/}{NAM}.
- %American Mathematical Society, Mathematical Association of America, National Association of Mathematicians.
-  \\
-Mentor     &
- POWER (Black Male Initiative). 
-  \\
-Organizer  &
- \href{https://\Profile.com/FRACTALS}{Active learning seminars},
- %\href{https://\Profile.com/FRACTALS}{Fresh Researchers in Algebra, Combinatorics, and Topology Active Learning Seminar},
- \href{https://www.ams.org/meetings/sectional/2312\_program\_ss15.html\#title}{AMS Special Sessions}.
- %\href{https://www.ams.org/meetings/sectional/2312\_program\_ss15.html\#title}{AMS Spring Eastern Sectional (Howard University) Special Session}.
-  \\
-Referee    & 
-Communications in Algebra.  
-
- \end{EntriesTableDuration}
-
+\section{Teaching}
+%%%%%%%%%%%%%%%%%%%%%    
+\subsection{Advising}
+\textbf{Academic}: Major advisor (\MSU). \textbf{Professional Development}: Mathematical writing and \LaTeX\ daily log facilitator. \textbf{Undergraduate Research}: Abhinav Poudel (\MSU); Irmak Bukey; Andrew Shannon (\Pomona, senior theses); \href{https://sumry.yale.edu/sumry-2025}{Summer Undergraduate Math Research at Yale (SUMRY) 2025 Project Mentor/Leader}. 
+%%%%%%%%%%%%%%%%%%%%%    
+\subsection{Enrichment}
+\textbf{Conferencing}: Morgan Institute for Strategic Teaching; MAA Introduction to Accessibility for Mathematics. \textbf{Certification}: Quality Matters Rubric Update Seventh Edition (RU) 2023.
+%%%%%%%%%%%%%%%%%%%%%    
+\subsection{Instruction}
+\textbf{\MSU}:
+\href{https://catalog.morgan.edu/preview_program.php?catoid=27&poid=6251&returnto=1998}{Graduate}: MATH 505 Abstract Algebra I; MATH 506 Abstract Algebra II.\\
+\href{https://catalog.morgan.edu/preview_program.php?catoid=26&poid=6079}{Undergraduate}: MATH 413 Algebraic Structures I; MATH 431 Mathematical Theory of Statistics I; MATH 432 Mathematical Theory of Statistics II; MATH 450 Senior Seminar. \textbf{\Pomona}:
+\href{https://catalog.pomona.edu/content.php?filter%5B27%5D=MATH&filter%5B29%5D=&filter%5Bcourse_type%5D=-1&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=43&expand=&navoid=8669&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter}{Undergraduate}: MATH PO 032 Calculs III; MATH 171 PO Abstract Algebra I; MATH 199 Independent Research: Intro to Manim via Combinatorics (and Algebra).
 \end{document}
