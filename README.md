@@ -6,6 +6,13 @@ These are the LaTeX sources for my academic CV summary i.e. a 2-pager.
 
 **Download** the latest compiled PDF:
 [Dwight_CVshort.pdf](https://github.com/mathdwight/cv/raw/pdf/Dwight_CVshort.pdf)
+
+## Update January 2025
+In .github/workflows/build.yml:
+
+- Changed Line 42: "uses: conda-incubator/setup-miniconda@v2.1.1" to "uses: conda-incubator/setup-miniconda@master"
+- Changed Line 46: "miniforge-variant: Mambaforge" to  "miniforge-variant: miniforge3" and 
+
 ---------------------------------------------------------------------------------------
 ### From Leonardo Uieda 
 
